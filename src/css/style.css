@@ -14,7 +14,8 @@ body {
 
 /* Header styles */
 header {
-    background-color: #A2DFF7;
+    background-color: #FF33C2;
+    opacity: 0.9;
     /* Header background color */
     padding: 20px;
     /* Padding for header */
@@ -22,12 +23,20 @@ header {
     /* Centered text */
 }
 
+.logo {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 header h1 {
-    background-color: #A2DFF7;
     margin: 0;
     /* No margin for header title */
     font-size: 36px;
     /* Size of the header title */
+    color: #F7F8FA
 }
 
 /* Navigation styles */
@@ -49,11 +58,11 @@ nav a {
 
 /* Banner styles */
 .banner {
-    background-image: url('https://example.com/banner-image.jpg');
+    background-image: url('/src/images/hero_img.png');
     /* Adjust with a suitable image URL */
     background-size: cover;
     /* Cover the entire banner area */
-    height: 300px;
+    height: 500px;
     /* Height of the banner */
     display: flex;
     /* Flexbox for alignment */
@@ -96,7 +105,7 @@ nav a {
 
 /* Individual benefit box styles */
 .benefit {
-    background-color: #B2E0B2;
+    background-color: #02B3F6;
     /* Background color for benefits */
     border-radius: 10px;
     /* Rounded corners */
@@ -135,7 +144,7 @@ nav a {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #B2E0B2;
+    background-color: #dacef3;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -145,7 +154,7 @@ nav a {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #B2E0B2;
+    background-color: #dacef3;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -153,9 +162,9 @@ nav a {
 /* Contact style */
 .contact-container {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 20px;
-    background-color: #70e000;
+    background-color: #dacef3;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -163,11 +172,11 @@ nav a {
 .contact-container input,
 .contact-container textarea,
 .contact-container button {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #dacef3;
 }
 
 /* Footer styles */
@@ -176,6 +185,6 @@ footer {
     /* Centered text */
     padding: 20px;
     /* Padding for footer */
-    background-color: #A2DFF7;
+    background-color: #dacef3;
     /* Footer background color */
 }
