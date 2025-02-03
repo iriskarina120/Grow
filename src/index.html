@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Children's English Platform</title>
+    <title>Grow es Crecer</title>
     <link rel="shortcut icon" href="/src/images/image.png" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -13,24 +13,38 @@
 
 <body>
 
-    <header>
+    <header class="sticky-header">
         <div class="page">
-            <img
-              src="/src/images/image.png"
-              class="logo"
-            />
-        <h1>Bienvenido a la Plataforma Grow</h1>
-        <nav>
-            <a href="/src/index.html">Home</a> <!-- Home link -->
-            <a href="./registration/index.html">Registrarse</a> <!-- Register link -->
-            <a href="./volunteers/index.html">Voluntarios</a> <!-- Volunteers link -->
-            <a href="./resources/index.html">Recursos</a> <!-- Resources link -->
-            <a href="./contact/index.html">Contacto</a> <!-- Contact link -->
-        </nav>
+            <img src="/src/images/image.png" class="logo" />
+            <h1>Bienvenido a la Plataforma Grow</h1>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    ☰ <!-- Hamburger icon -->
+                </div>
+                <div class="nav-container">
+                    <a href="/src/index.html">Home</a>
+                    <a href="./registration/index.html">Registrate</a>
+                    <a href="./volunteers/index.html">Aprende</a>
+                    <a href="./resources/index.html">Recursos</a>
+                    <a href="./contact/index.html">Contactanos</a>
+                </div>
+            </nav>
+        </div>
     </header>
+    <div class="dynamic-lines">
+        <svg class="waves" viewBox="0 0 1200 90" preserveAspectRatio="none">
+            <path class="wave" fill="none" stroke="#FF33C2" stroke-width="12"
+                d="M0,20 L240,20 L480,20 L720,20 L960,20 L1200,20" />
+            <path class="wave" fill="none" stroke="#02B3F6" stroke-width="12"
+                d="M0,40 L240,40 L480,40 L720,40 L960,40 L1200,40" />
+        </svg>
+    </div>
 
     <div class="banner">
-        <h2>¡El límite lo pones tú!</h2> <!-- Tagline for the platform -->
+        <!-- <h2>¡El límite lo pones tú!</h2>  Tagline for the platform --> */
+    </div>
+    <div>
+
     </div>
 
     <section class="section">
@@ -50,11 +64,12 @@
             </div>
         </div>
     </section>
-
     <footer>
         <p>Síguenos en nuestras redes sociales</p> <!-- Follow us on social media -->
         <p>&copy; 2025 Iris Ayala | Todas las derechos reservados.</p> <!-- Copyright notice -->
     </footer>
+    <script src="/src/js/ham.js"></script>
+    <script src="/src/js/lines.js"></script>
 
 </body>
 

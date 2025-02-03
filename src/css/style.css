@@ -1,3 +1,4 @@
+
 /* General body styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -11,23 +12,28 @@ body {
     color: #333;
     /* Dark text color */
 }
-
 /* Header styles */
 header {
     background-color: #FF33C2;
-    opacity: 0.9;
+    opacity: 0.8;
     /* Header background color */
     padding: 20px;
     /* Padding for header */
     text-align: center;
     /* Centered text */
 }
+/* Sticky header styles */  
+.sticky-header {  
+    position: sticky; /* Changes the header's positioning to sticky */  
+    top: 0; /* Keeps the header at the top of the viewport */  
+    z-index: 1000; /* Ensures the header is above other elements on the page */  
+}
 
 .logo {
     width: 10%;
     height: auto;
     position: absolute;
-    top: 0;
+    top: 25;
     left: 0;
 }
 
@@ -122,7 +128,7 @@ nav a {
 /* Form styles*/
 
 .form-container {
-    max-width: 600px;
+    max-width: 700px;
     margin: 20px auto;
     padding: 20px;
     background-color: #B2E0B2;
@@ -188,3 +194,78 @@ footer {
     background-color: #dacef3;
     /* Footer background color */
 }
+.dynamic-lines {  
+    position: relative;  
+    height: 90px; /* Container height to fit the waves */  
+    overflow: hidden; /* Hide overflow */  
+}  
+
+.waves {  
+    width: 100%;  
+    height: 100%;  
+}  
+/* Basic styles for nav */  
+nav {  
+    display: flex;  
+    align-items: center;  
+    justify-content:center; /* Align items to the left */  
+    padding: 10px; 
+}  
+.nav-container a{
+    margin: 0 20px;
+}
+
+/* Media query for mobile view */  
+@media (max-width: 768px) {  
+
+    nav {       
+        justify-content: flex-start; /* Align items to the left */  
+        color:#fff;        
+        }  
+    .nav-container {  
+        display: none; /* Hide links on mobile */  
+        flex-direction: column; /* Stack links vertically */  
+        position: absolute; /* Position absolutely */  
+        top: 50px; /* Position below the nav */  
+        left: 0; /* Align left */  
+        width: 150px; /* Fixed width for the menu */  
+        background-color: #fff; /* Background color */  
+        border: 2px solid #02B3F6; /* Optional border */  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */  
+        z-index: 1000; /* Ensure it appears above other elements */  
+        transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transitions */  
+        visibility: hidden; /* Hide by default */  
+        opacity: 0; /* Fade out */  
+    }  
+    
+    .nav-container.active {  
+        display: flex; /* Show links when active */  
+        visibility: visible; /* Make it visible */  
+        opacity: 1; /* Fade in */  
+    }  
+    
+    .hamburger {  
+        display: block; /* Show hamburger icon */  
+        cursor: pointer; /* Pointer on hover */  
+        font-size: 38px; /* Size of the icon */  
+        margin-right: 15px; /* Space between icon and nav links */  
+    }  
+}  
+
+/* Hide hamburger icon on larger screens */  
+@media (min-width: 769px) {  
+    .hamburger {  
+        display: none; /* Hide on larger screens */  
+    }  
+}  
+
+/* Basic link styling */  
+nav a {      
+    margin: 5px 0; /* Spacing between links */  
+    text-decoration: none; /* Remove underline */  
+    color: #333; /* Link color */  
+}  
+
+nav a:hover {  
+    color: #007BFF; /* Change link color on hover */  
+}  
