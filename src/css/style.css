@@ -68,7 +68,7 @@ nav a {
 
 /* Banner styles */
 .banner {
-    background-image: url('images/hero_img.png');
+    background-image: url('https://github.com/iriskarina120/Grow/blob/main/src/images/hero_img.png');
     /* Adjust with a suitable image URL */
     background-size: cover;
     /* Cover the entire banner area */
