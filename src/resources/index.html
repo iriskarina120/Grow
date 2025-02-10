@@ -1,45 +1,63 @@
 <!DOCTYPE html>  
 <html lang="es">  
+
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Recursos - Grow es Crecer</title>
-    <link rel="shortcut icon" href="/src/images/image.png" />
+    <title>Recursos - Grow es Crecer</title>  
+    <link rel="shortcut icon" href="/src/images/image.png" />  
     <link rel="stylesheet" href="../css/style.css" />  
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
-    
 </head>  
+
 <body>  
 
-    <header class="sticky-header">  
-        <div class="page">  
-            <img src="images/image.png" class="logo" />  
-            <h1>Bienvenido a la Plataforma Grow</h1>  
-            <nav>  
-                <a href="index.html">Home</a>  
-                <a href="registration/index.html">Registrarse</a>  
-                <a href="volunteers/index.html">Voluntarios</a>  
-                <a href="resources/index.html">Recursos</a>  
-                <a href="contact/index.html">Contacto</a>  
-            </nav>  
-        </div>  
-    </header>  
+    <header class="sticky-header">
+        <div class="page">
+            <img src="../images/image.png" class="logo" />
+            <h1>Bienvenido a Grow</h1>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    ☰ <!-- Hamburger icon -->
+                </div>
+                <div class="nav-container">
+                    <a href="../index.html">Home</a>
+                    <a href="../registration/index.html">Registrate</a>
+                    <a href="../learn/index.html">Aprende</a>
+                    <a href="../resources/index.html" class="active">Recursos</a>
+                    <a href="../contact/index.html">Contactanos</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<div class="resources-container">  
-    <h2>Aquí tienes materiales útiles</h2>  
-    <p>Accede a una variedad de recursos para mejorar tus lecciones:</p>  
-    <ul>  
-        <li><a href="#">Guías de enseñanza</a></li>  
-        <li><a href="#">Juegos interactivos</a></li>  
-        <li><a href="#">Videos educativos</a></li>  
-        <li><a href="#">Ejercicios imprimibles</a></li>  
-    </ul>  
-</div>  
+    <div class="dynamic-lines">  
+        <svg class="waves" viewBox="0 0 1200 90" preserveAspectRatio="none">  
+            <path class="wave" fill="none" stroke="#FF33C2" stroke-width="12"  
+                d="M0,20 L240,20 L480,20 L720,20 L960,20 L1200,20" />  
+            <path class="wave" fill="none" stroke="#02B3F6" stroke-width="12"  
+                d="M0,40 L240,40 L480,40 L720,40 L960,40 L1200,40" />  
+        </svg>  
+    </div>  
 
-<footer>
-    <p>Síguenos en nuestras redes sociales</p> <!-- Follow us on social media -->
-    <p>&copy; 2025 Iris Ayala | Todas las derechos reservados.</p> <!-- Copyright notice -->
-</footer> 
+    <div class="resources-container">  
+        <h2>Aquí tienes materiales útiles</h2>  
+        <p>Accede a una variedad de recursos para mejorar tus lecciones:</p>  
+        <ul>  
+            <li><a href="#">Guías de enseñanza</a></li>  
+            <li><a href="#">Juegos interactivos</a></li>  
+            <li><a href="#">Videos educativos</a></li>  
+            <li><a href="#">Ejercicios imprimibles</a></li>  
+        </ul>  
+    </div>  
 
+    <footer>  
+        <p>Síguenos en nuestras redes sociales</p> <!-- Follow us on social media -->  
+        <p>&copy; 2025 Iris Ayala | Todos los derechos reservados.</p> <!-- Copyright notice -->  
+    </footer>  
+
+    <script src="../js/ham.js"></script>  
+    <script src="../js/lines.js"></script>  
 </body>  
+
 </html>  

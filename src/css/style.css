@@ -68,7 +68,7 @@ nav a {
 
 /* Banner styles */
 .banner {
-    background-image: url('../images/hero_img.png'); 
+    background-image: url('../images/hero_img.png');
     /* Adjust with a suitable image URL */
     background-size: cover;
     /* Cover the entire banner area */
@@ -149,7 +149,7 @@ nav a {
     border: 1px solid #ccc;
 }
 
-/* Volunteers style*/
+/* Learn style*/
 .volunteer-info {
     max-width: 600px;
     margin: 20px auto;
@@ -224,6 +224,12 @@ nav {
 .nav-container a {
     margin: 0 20px;
 }
+.active {
+    color: #007BFF;
+    /* active link color */
+    text-decoration: underline;
+}
+
 
 /* Media query for mobile view */
 @media (max-width: 768px) {
@@ -271,7 +277,9 @@ nav {
         opacity: 1;
         /* Fade in */
     }
-
+    .banner {  
+        height: 25vh; /* image smaller*/  
+    } 
     .hamburger {
         display: block;
         /* Show hamburger icon */
@@ -306,3 +314,4 @@ nav a:hover {
     color: #007BFF;
     /* Change link color on hover */
 }
+
