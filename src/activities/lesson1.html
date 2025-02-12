@@ -1,0 +1,153 @@
+<!DOCTYPE html>  
+<html lang="en">  
+
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Interactive English Learning Games</title>  
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            background-color: #f4f4f4;  
+            margin: 0;  
+            padding: 20px;  
+        }  
+
+        h1 {  
+            text-align: center;  
+            color: #333;  
+        }  
+
+        .game-container {  
+            margin: 20px 0;  
+            padding: 20px;  
+            background-color: white;  
+            border-radius: 8px;  
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+        }  
+
+        #colorBox {  
+            width: 200px;  
+            height: 200px;  
+            margin: 20px auto;  
+        }  
+
+        button {  
+            margin: 5px;  
+            padding: 10px;  
+            background-color: #28a745;  
+            color: white;  
+            border: none;  
+            border-radius: 5px;  
+            cursor: pointer;  
+            font-size: 16px;  
+        }  
+
+        button:hover {  
+            background-color: #218838;  
+        }  
+    </style>  
+</head>  
+
+<body>  
+
+    <h1>Interactive Games for Learning English</h1>  
+
+    <!-- Greetings Flashcards -->  
+    <div class="game-container">  
+        <h2>Greetings and Goodbyes Flashcards</h2>  
+        <div class="flashcards">  
+            <div class="card" onclick="playSound('hello')">  
+                <p>Hello!</p>  
+            </div>  
+            <div class="card" onclick="playSound('goodbye')">  
+                <p>Goodbye!</p>  
+            </div>  
+            <div class="card" onclick="playSound('hi')">  
+                <p>Hi!</p>  
+            </div>  
+            <div class="card" onclick="playSound('see_you_later')">  
+                <p>See you later!</p>  
+            </div>  
+        </div>  
+        <audio id="hello" src="sounds/hello.mp3"></audio>  
+        <audio id="goodbye" src="sounds/goodbye.mp3"></audio>  
+        <audio id="hi" src="sounds/hi.mp3"></audio>  
+        <audio id="see_you_later" src="sounds/see_you_later.mp3"></audio>  
+    </div>  
+
+    <!-- Name and Age Questions -->  
+    <div class="game-container">  
+        <h2>What is your Name?</h2>  
+        <label for="name">What is your name?</label>  
+        <input type="text" id="name" />  
+        <button onclick="greetUser()">Send</button>  
+    </div>  
+
+    <!-- Color Guessing Game -->  
+    <div class="game-container">  
+        <h2>Guess the Color</h2>  
+        <div id="colorBox" style="background-color: gray;"></div>  
+        <button onclick="changeColor()">Change Color</button>  
+        <button onclick="guessColor('Red')">Red</button>  
+        <button onclick="guessColor('Blue')">Blue</button>  
+        <button onclick="guessColor('Green')">Green</button>  
+    </div>  
+
+    <!-- To Be Verb Game -->  
+    <div class="game-container">  
+        <h2>Complete the Sentence with "to be"</h2>  
+        <p>I ___ a student.</p>  
+        <select id="verbSelect">  
+            <option value="am">am</option>  
+            <option value="is">is</option>  
+            <option value="are">are</option>  
+        </select>  
+        <button onclick="checkAnswer()">Submit</button>  
+    </div>  
+
+    <script>  
+        // Function to play audio  
+        function playSound(greeting) {  
+            const audio = document.getElementById(greeting);  
+            audio.play();  
+        }  
+
+        // Greet user by name  
+        function greetUser() {  
+            const name = document.getElementById('name').value;  
+            alert(`Nice to meet you, ${name}!`); // Greet the user  
+        }  
+
+        // Change the color of the color box  
+        function changeColor() {  
+            const colors = ['red', 'blue', 'green'];  
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];  
+            document.getElementById('colorBox').style.backgroundColor = randomColor;  
+            return randomColor; // Return the current random color  
+        }  
+
+        // Guess color function  
+        function guessColor(selectedColor) {  
+            const currentColor = document.getElementById('colorBox').style.backgroundColor;  
+            if (selectedColor.toLowerCase() === currentColor) {  
+                alert("Correct!"); // User guessed correctly  
+            } else {  
+                alert("Try again!"); // User guessed incorrectly  
+            }  
+        }  
+
+        // Check the answer for the 'to be' game  
+        function checkAnswer() {  
+            const answer = document.getElementById('verbSelect').value;  
+            if (answer === 'am') {  
+                alert("Correct!"); // Correct answer  
+            } else {  
+                alert("Try again."); // Incorrect answer  
+            }  
+        }  
+    </script>  
+</body>  
+
+</html>  
