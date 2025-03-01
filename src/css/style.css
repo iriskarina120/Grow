@@ -276,7 +276,7 @@ nav {
         /* Position below the nav */
         left: 5px;
         /* Align left */
-        width: 120px;
+        width: 100px;
         /* Fixed width for the menu */
         background-color: #f2f2f2;
         /* Background color */
@@ -318,7 +318,7 @@ nav {
         /* Size of the icon */
           /* Space between icon and nav links */ 
         position: absolute;
-       top: 70px;
+        top: 65px;
             
     }
 }
