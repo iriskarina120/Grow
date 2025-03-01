@@ -19,7 +19,7 @@ body {
         text-align: center;
         /* Centered text */      
         border-radius: 0px 0px 10px 10px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);   
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);       
     } 
 
 /* Sticky header styles */
@@ -106,7 +106,8 @@ button {
     cursor: pointer;  
     border-radius: 25px;  
     transition: background-color 0.3s, transform 0.3s;  
-}  
+}
+ 
 
 button:hover {  
     background-color: #91d5ee;  /* Sombra más oscura en hover */  
@@ -229,7 +230,7 @@ footer {
     overflow: hidden;
     /* Hide overflow */
     z-index: 1;
-    margin-top: -15px;
+    margin-top: -15;
 }
 
 .waves {
@@ -243,11 +244,11 @@ nav {
     align-items: center;
     justify-content: center;
     /* Align items to the left */
-    padding: 10px;
+    padding: 10px;    
 }
 
 .nav-container a {
-    margin: 0 20px;
+    margin: 0 20px;    
 }
 .active {
     color: #007BFF;
@@ -277,21 +278,20 @@ nav {
         /* Align left */
         width: 120px;
         /* Fixed width for the menu */
-        background-color: #fff;
+        background-color: #f2f2f2;
         /* Background color */
-        border: 5px solid #02B3F6;
-        /* Border */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Add shadow for better visibility */
+        border: 2px solid #02B3F6;
+        /* Border */       
         z-index: 1000;
         /* Ensure it appears above other elements */
         transition: opacity 0.3s ease, visibility 0.3s ease;
         /* Smooth transitions */
         visibility: hidden;
-        /* Hide by default */
-        opacity: 0;
-        /* Fade out */
-    }
+        /* Hide by default */       
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+        font-size: small;
+    }    
 
     .nav-container.active {
         display: flex;
@@ -302,8 +302,13 @@ nav {
         /* Fade in */
     }
     .banner {  
-        height: 55vh; /* image smaller*/  
+        height: 55vh; /* image smaller*/
+        
     } 
+    header{
+        max-height: 100px;  
+    }
+    
     .hamburger {
         display: block;
         /* Show hamburger icon */
@@ -311,8 +316,10 @@ nav {
         /* Pointer on hover */
         font-size: 25px;
         /* Size of the icon */
-        margin-right: 25px;
-        /* Space between icon and nav links */
+          /* Space between icon and nav links */ 
+        position: absolute;
+       top: 70px;
+            
     }
 }
 
