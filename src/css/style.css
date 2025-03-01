@@ -1,27 +1,26 @@
 /* General body styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    /* Font style */
-    background-color: #F7F8FA;
-    /* Light background color */
-    margin: 0;
-    /* No margin */
-    padding: 0;
-    /* No padding */
+body {  
+    font-family: 'Comic Sans MS', cursive, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f2f2f2; /* Color de fondo suave */  
     color: #333;
-    /* Dark text color */
-}
+    width: 80%; /* Establece el ancho al 70% de la pantalla */  
+    margin: 0 auto; /* Centra el contenido horizontalmente */  
+}    
 
-/* Header styles */
-header {
-    background-color: #FF33C2;
-    opacity: 0.8;
-    /* Header background color */
-    padding: 20px;
-    /* Padding for header */
-    text-align: center;
-    /* Centered text */
-}
+
+    /* Header styles */
+    header {    
+        background-color: #f2f2f2;/* Header background color */
+        opacity: 0.9;
+        padding-top: 5px;
+        /* Padding for header */
+        text-align: center;
+        /* Centered text */      
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);   
+    } 
 
 /* Sticky header styles */
 .sticky-header {
@@ -34,11 +33,10 @@ header {
 }
 
 .logo {
-    width: 10%;
-    height: auto;
-    position: absolute;
-    top: 25;
-    left: 0;
+    width: 100%;
+    max-height: 140px;
+    position: relative;
+    top: 0; 
 }
 
 header h1 {
@@ -46,7 +44,10 @@ header h1 {
     /* No margin for header title */
     font-size: 36px;
     /* Size of the header title */
-    color: #F7F8FA
+    color: #333;
+}
+header h2 {
+    color
 }
 
 /* Navigation styles */
@@ -59,8 +60,7 @@ nav a {
     margin: 0 15px;
     /* Margin between links */
     text-decoration: none;
-    /* No underline */
-    color: #333;
+    /* No underline */   
     /* Dark text color for links */
     font-weight: 700;
     /* Bold text for links */
@@ -68,11 +68,14 @@ nav a {
 
 /* Banner styles */
 .banner {
-    background-image: url('../images/hero_img.png');
+    background-image: url('../images/hero4.png');
+    margin-top: -50px;
     /* Adjust with a suitable image URL */
     background-size: cover;
-    /* Cover the entire banner area */
-    height: 500px;
+    /* Cover the entire banner area */    
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */  
+    position: relative; /* Permite usar 'absolute' en la imagen */
+    height: 450px;  
     /* Height of the banner */
     display: flex;
     /* Flexbox for alignment */
@@ -85,12 +88,29 @@ nav a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     /* Shadow for text */
 }
-
 .banner h2 {
     font-size: 36px;
     /* Size of the banner title */
     margin: 0;
     /* No margin */
+}
+button {  
+    background-color: #FF33C2;   /* Rojo para el botón */  
+    color: white;  
+    padding: 5px 4px;  
+    text-align: center;  
+    text-decoration: none;  
+    display: inline-block;  
+    font-size: 1.2em;  
+    margin: 20px 2px;  
+    cursor: pointer;  
+    border-radius: 25px;  
+    transition: background-color 0.3s, transform 0.3s;  
+}  
+
+button:hover {  
+    background-color: #9e1d6d; /* Sombra más oscura en hover */  
+    transform: scale(1.08);  
 }
 
 /* Section styles */
@@ -190,21 +210,26 @@ nav a {
 }
 
 /* Footer styles */
-footer {
-    text-align: center;
-    /* Centered text */
-    padding: 20px;
-    /* Padding for footer */
+footer {  
+    text-align: center;  
+    padding: 10px;  
     background-color: #dacef3;
     /* Footer background color */
-}
+    /* Header background color */
+    color: #333; 
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+} 
 
 .dynamic-lines {
     position: relative;
-    height: 90px;
+    height: 80px;
     /* Container height to fit the waves */
     overflow: hidden;
     /* Hide overflow */
+    z-index: 1;
+    margin-top: -15px;
 }
 
 .waves {
@@ -236,8 +261,7 @@ nav {
 
     nav {
         justify-content: flex-start;
-        /* Align items to the left */
-        color: #fff;
+        /* Align items to the left */       
     }
 
     .nav-container {
@@ -278,7 +302,7 @@ nav {
         /* Fade in */
     }
     .banner {  
-        height: 25vh; /* image smaller*/  
+        height: 55vh; /* image smaller*/  
     } 
     .hamburger {
         display: block;
