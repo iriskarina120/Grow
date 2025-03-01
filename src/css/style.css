@@ -68,14 +68,14 @@ nav a {
 
 /* Banner styles */
 .banner {
-    background-image: url('../images/hero4.png');
+    background-image: url('../images/hero.jpg');
     margin-top: -50px;
     /* Adjust with a suitable image URL */
     background-size: cover;
     /* Cover the entire banner area */    
     overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */  
     position: relative; /* Permite usar 'absolute' en la imagen */
-    height: 450px;  
+    height: 380px;  
     /* Height of the banner */
     display: flex;
     /* Flexbox for alignment */
