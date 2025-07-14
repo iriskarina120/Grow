@@ -1,0 +1,190 @@
+body {  
+    font-family: 'Comic Sans MS', cursive, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f2f2f2; /* Color de fondo suave */  
+    color: #333;
+    width: 80%; /* Establece el ancho al 70% de la pantalla */  
+    margin: 0 auto; /* Centra el contenido horizontalmente */  
+}  
+
+    /* Header styles */
+header {    
+    background-color: #f2f2f2;/* Header background color */
+    opacity: 0.9;
+    padding-top: 5px;
+    /* Padding for header */
+    text-align: center;
+    /* Centered text */      
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);   
+} 
+/* Sticky header styles */
+.sticky-header {
+    position: sticky;
+    /* Changes the header's positioning to sticky */
+    top: 0;
+    /* Keeps the header at the top of the viewport */
+    z-index: 1000;
+    /* Ensures the header is above other elements on the page */
+}
+
+
+header p {
+    color:#001427;
+}
+
+h1 { 
+    color:#001427;  
+    font-size: 2.2em;    
+}
+
+h2 {   
+    margin-top: 0%;
+    font-size: 2em;
+}
+h3 {   
+    font-size: 1.2em;
+    padding-bottom: 1.5%;  
+} 
+
+p {  
+    font-size: 2 em;
+    line-height: 1;   
+}  
+
+button {  
+    background-color: #FF33C2;   /* Rojo para el botón */  
+    color: white;  
+    padding: 5px 4px;  
+    text-align: center;  
+    text-decoration: none;  
+    display: inline-block;  
+    font-size: 1.2em;  
+    margin: 20px 2px;  
+    cursor: pointer;  
+    border-radius: 25px;  
+    transition: background-color 0.3s, transform 0.3s;  
+}  
+
+button:hover {  
+    background-color: #9e1d6d; /* Sombra más oscura en hover */  
+    transform: scale(1.08);  
+}  
+
+main {  
+    padding: 20px;      
+}  
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+}
+
+#modulos {
+    position: relative;
+}
+
+.overlay-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite la interacción con el contenido debajo de la imagen */
+    z-index: 1;
+    background-image: url('../images/img2.png');
+    opacity: 0.7; 
+    background-size:inherit; /* Ajusta la imagen para cubrir todo el fondo */  
+    background-position: right; /* Centra la imagen */  
+    background-repeat:repeat-y; /* Evita que la imagen se repita */  
+}
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+    background-size:cover; /* Ajusta la imagen para cubrir todo el fondo */    
+}
+
+.modulo {
+    position: relative;
+    z-index: 2; /* Coloca el contenido encima de la imagen */
+}
+
+#modulos {  
+    background: #ffffff;  
+    padding-left: 130px;
+    padding-top: 40px;  
+    border-radius: 10px;  
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);    
+    margin: 0 auto;  
+    flex-direction: column; /* Align items in a column */  
+    align-items: center; /* Center items horizontally */    
+} 
+
+.modulo {     
+    border-bottom: 1px solid #cccccc;     
+}  
+
+.modulo-img {  
+    width: 15%; /* Tamaño de la imagen */  
+    height: auto;  
+}  
+
+.modulo-info h3 {  
+    margin: 0;  
+    color: #001427;  
+}  
+
+.module-btn {  
+    background-color: #02B3F6; /* Navy Blue para los botones de los módulos */  
+    color: white;  
+    padding: 10px 20px; /* Ajusta el tamaño del botón */  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    font-size: 16px;  
+}  
+
+.module-btn:hover {  
+    background-color: #001427; /* Sombra más oscura en hover */  
+}  
+
+footer {  
+    text-align: center;  
+    padding: 10px;  
+    background-color: #dacef3;
+    /* Footer background color */
+    /* Header background color */
+    color: #333; 
+    position: relative;     
+    bottom: 0;  
+    width: 100%;  
+} 
+@media (max-width: 1000px){
+
+.overlay-image-container {
+        opacity: 70%; 
+}
+#modulos {    
+    padding: 20px; 
+}
+
+@media (max-width: 600px) {  
+    h1, h2 {  
+        font-size: 1.8em; /* Ajusta el tamaño de los encabezados en pantallas pequeñas */  
+    } 
+    .overlay-image-container {
+        opacity: 30%; 
+
+    p, button {  
+        font-size: 1em; /* Ajusta el tamaño de texto para mejor legibilidad */  
+    } 
+    #modulos {    
+        padding: 10px; 
+    } 
+}  
